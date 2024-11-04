@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sheksiz Art Gallery</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" aria-label="Open Menu"></div>
+        <h1>Sheksiz</h1>
+        <div class="search-container">
+            <div class="search-icon" id="search-icon" aria-label="Search"></div>
+            <input type="text" id="search-bar" placeholder="Search...">
+            <div id="search-results" class="hidden"></div>
+        </div>
+    </header>
+
+    <nav id="dropdown-menu" aria-label="Main Navigation">
+        <a href="abouteng.html">About</a>
+        <a href="painterseng.html">Painters</a>
+        <a href="galleries.html">Galleries</a>
+        <div class="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#">Language</a>
+            <div class="dropdown-content" aria-label="Language Options">
+                <a href="mainkaz.html">Kazakh</a>
+                <a href="mainrus.html">Russian</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="slider" tabindex="0" role="region" aria-label="Image Slider" onkeydown="handleKey(event)">
+
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="./img/Agalim1.png" alt="Image 1">
+                    <div class="text-overlay">
+                        <h2>Almaty</h2>
+                        <h1>Aisha Galimbaeva</h1>
+                        <p>Watch in musuem</p>
+                        <a href="AGalimbaeva.html" class="explore-btn">Explore Now</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="./img/paint4.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Almaty</h2>
+                        <h1>Abilhan Kasteev</h1>
+                        <p>Watch in musuem</p>
+                        <a href="akasteev.html" class="explore-btn">Explore Now</a>
+                    </div>
+                </div>            
+                            
+                <div class="slide">
+                    <img src="./img/back4.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Astana</h2>
+                        <h1>Backtiar Tabiev</h1>
+                        <p>Watch in<br>National Musuem </p>
+                        <a href="Tabiev.html" class="explore-btn">Explore Now</a>
+                    </div>
+                </div>  
+                <div class="slide">
+                    <img src="./img/sharden5.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Astana</h2>
+                        <h1>Zhanatai Shardenov</h1>
+                        <p>Watch in<br>National Musuem </p>
+                        <a href="Shardenov.html" class="explore-btn">Explore Now</a>
+                    </div>
+                </div>  
+                <div class="slide">
+                    <img src="./img/zaltsman6.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Semey</h2>
+                        <h1>Zaltzman Pavel</h1>
+                        <p>Watch in<br>Nevzorov musuem</p>
+                        <a href="Zaltsman.html" class="explore-btn">Explore Now</a>
+                    </div>
+                </div>  
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
+<!-- https://www.pacegallery.com/ -->

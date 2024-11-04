@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sheksiz Арт Галлереясы</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu-icon"></div>
+        <h1>Sheksiz</h1>
+        <div class="search-container">
+            <div class="search-icon" id="search-icon">;</div>
+            <input type="text" id="search-bar" placeholder="Search...">
+            <div id="search-results" class="hidden"></div>
+        </div>
+    </header>
+
+    <!-- Dropdown Menu -->
+    <nav id="dropdown-menu">
+        <a href="aboutkaz.html">Біз туралы</a>
+        <a href="painterskaz.html">Суретшілер</a>
+        <a href="gallerieskaz.html">Галереялар</a>>
+        <div class="dropdown">
+            <a href="#">Тілдер</a>
+            <div class="dropdown-content">
+                <a href="#">Қазақ тілі</a>
+                <a href="mainrus.html">Орыс тілі</a>
+                <a href="maineng.html">Ағылшын тілі</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="slider" tabindex="0" role="region" aria-label="Image Slider" onkeydown="handleKey(event)">
+
+            <div class="slides">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="./img/Agalim1.png" alt="Image 1">
+                    <div class="text-overlay">
+                        <h2>Алматы</h2>
+                        <h1>Айша Галимбаева</h1>
+                        <p>Мұражайда көру</p>
+                        <a href="AGalimbaevakaz.html" class="explore-btn">Толығырақ</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="./img/paint4.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Алматы</h2>
+                        <h1>Әбілхан Қастеев</h1>
+                        <p>Қастеев мұражайында көру</p>
+                        <a href="akasteevkaz.html" class="explore-btn">Толығырақ</a>
+                    </div>
+                </div>            
+                            
+                <div class="slide">
+                    <img src="./img/back4.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Астана</h2>
+                        <h1>Бақтияр Тәбиев</h1>
+                        <p>Қазақстандық Ұлттық мұражайында көру</p>
+                        <a href="Tabievkaz.html" class="explore-btn">Толығырақ</a>
+                    </div>
+                </div>  
+                <div class="slide">
+                    <img src="./img/sharden5.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Астана</h2>
+                        <h1>Жаңатай Шарденов</h1>
+                        <p>Қазақстандық Ұлттық мұражайында көру </p>
+                        <a href="Shardenovkaz.html" class="explore-btn">Толығырақ</a>
+                    </div>
+                </div>  
+                <div class="slide">
+                    <img src="./img/zaltsman6.jpg" alt="Image 2">
+                    <div class="text-overlay">
+                        <h2>Семей</h2>
+                        <h1>Зальцман Павел</h1>
+                        <p>Невзоров мұражайында көру</p>
+                        <a href="Zaltsmankaz.html" class="explore-btn">Толығырақ</a>
+                    </div>
+                </div>  
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
